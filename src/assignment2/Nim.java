@@ -8,6 +8,10 @@ public class Nim {
             System.out.print ("What is the starting number of sticks? ");
             int sticks = in.nextInt();
 
+            if (sticks < 1) {
+                System.out.print ("What is the starting number of sticks? ");
+            }
+
             for (int i = 1; sticks >= 0; i++) {
 
                 while (sticks > 0) {
@@ -51,12 +55,12 @@ public class Nim {
 
                 } 
 
-                }
+            }
            
-            in.close();
-        }    
+        in.close();
+    }    
         
-    }
+}
        
 
 
